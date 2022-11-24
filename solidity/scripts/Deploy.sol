@@ -21,7 +21,7 @@ abstract contract Deploy is Script {
 
 contract DeployMainnet is Deploy {
     function run() external {
-        uint256 TOKEN_PRICE = 1 ether;
+        uint256 TOKEN_PRICE = 0.01 ether;
         uint256 INITIAL_SUPPLY = 100 ether;
 
         _deploy(TOKEN_PRICE, INITIAL_SUPPLY);
@@ -30,7 +30,7 @@ contract DeployMainnet is Deploy {
 
 contract DeployMumbai is Deploy {
     function run() external {
-        uint256 TOKEN_PRICE = 1 ether;
+        uint256 TOKEN_PRICE = 0.01 ether;
         uint256 INITIAL_SUPPLY = 100 ether;
 
         _deploy(TOKEN_PRICE, INITIAL_SUPPLY);
