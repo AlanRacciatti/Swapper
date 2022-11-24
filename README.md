@@ -93,10 +93,10 @@ yarn coverage
 
 Configure the `.env` variables.
 
-### Rinkeby
+### Mumbai
 
 ```bash
-yarn deploy:rinkeby
+yarn deploy:mumbai
 ```
 
 ### Mainnet

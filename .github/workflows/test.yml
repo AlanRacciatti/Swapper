@@ -54,7 +54,7 @@ jobs:
         run: |
           touch .env
           echo MAINNET_RPC="${{ secrets.MAINNET_RPC }}" >> .env
-          echo RINKEBY_RPC="${{ secrets.RINKEBY_RPC }}" >> .env
+          echo MUMBAI_RPC="${{ secrets.MUMBAI_RPC }}" >> .env
           cat .env
 
       - name: Run tests
@@ -77,7 +77,7 @@ jobs:
       - name: Install forge dependencies
         run: forge install
 
-      - name: Precompile using 0.8.14 and via-ir=true
+      - name: Precompile using 0.8.17 and via-ir=true
         run: yarn build:optimized
 
       - name: Run tests
