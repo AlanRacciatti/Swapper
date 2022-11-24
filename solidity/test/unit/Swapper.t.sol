@@ -184,6 +184,8 @@ contract Unit_Swapper_PriceSetter is Base {
         pop = new Pop(1, 10000);
         swapper = new Swapper(100, [address(blues), address(pop)]);
 
+        vm.assume(swapper.owner() != _user);
+
         vm.startPrank(_user);
 
         vm.expectRevert();
